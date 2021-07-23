@@ -19,6 +19,9 @@ void main(){
   //catch error used for handler when code completed with error
       .catchError((error){
     print ("sorry. $error");
+  })
+  .whenComplete(() {
+    print("Thank you");
   });
 
   print("Getting your order...");
